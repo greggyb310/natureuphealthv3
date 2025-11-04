@@ -2,6 +2,7 @@
   "expo": {
     "name": "NatureUP Health",
     "slug": "natureup-health",
+    "owner": "greggyb310",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -10,14 +11,14 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.natureup.health4"
+      "bundleIdentifier": "com.natureup.health"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#4A7C2E"
       },
-      "package": "com.natureup.health4"
+      "package": "com.natureup.health"
     },
     "web": {
       "bundler": "metro",
