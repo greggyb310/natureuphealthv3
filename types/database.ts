@@ -47,6 +47,55 @@ export interface Database {
           updated_at?: string
         }
       }
+      conversations: {
+        Row: {
+          id: string
+          user_id: string
+          assistant_type: 'health_coach' | 'excursion_creator'
+          thread_id: string
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          assistant_type: 'health_coach' | 'excursion_creator'
+          thread_id: string
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          assistant_type?: 'health_coach' | 'excursion_creator'
+          thread_id?: string
+          created_at?: string
+          updated_at?: string
+        }
+      }
+      messages: {
+        Row: {
+          id: string
+          conversation_id: string
+          role: 'user' | 'assistant'
+          content: string
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          conversation_id: string
+          role: 'user' | 'assistant'
+          content: string
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          conversation_id?: string
+          role?: 'user' | 'assistant'
+          content?: string
+          created_at?: string
+        }
+      }
     }
     Views: {}
     Functions: {}
